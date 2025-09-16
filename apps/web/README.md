@@ -60,6 +60,7 @@ export default {
 ```
 
 **Key differences from Tailwind v3:**
+
 - Uses `@tailwindcss/postcss` instead of standalone plugin
 - CSS import: `@import 'tailwindcss' source('../')`
 - Enhanced performance and build optimization
@@ -86,6 +87,7 @@ Configured to work with our `src/` directory structure:
 ### Server-Side Rendering (SSR)
 
 Full SSR is configured with:
+
 - Server-rendered HTML with complete content
 - CSS properly linked and optimized
 - Client-side hydration for interactivity
@@ -248,16 +250,19 @@ bun wrangler deploy .output/server/index.mjs --assets .output/public
 ### Common Issues
 
 **Button animations not working?**
+
 - Ensure `tailwindcss-animate` is installed
 - Check that PostCSS is processing Tailwind correctly
 - Verify active state classes are included
 
 **Styles not loading in production?**
+
 - Check CSS file is properly linked in `__root.tsx`
 - Verify build output includes CSS assets
 - Ensure Cloudflare Workers has correct asset handling
 
 **TypeScript errors?**
+
 - Run `just fix` to auto-fix common issues
 - Check path aliases in `tsconfig.json`
 - Verify worker types are generated: `bun wrangler types`
@@ -271,6 +276,7 @@ If port 3000 is in use, Vite will automatically try 3001, 3002, etc.
 ### Why `src/` instead of `app/`?
 
 While TanStack Start's official guide uses `app/` directory, we chose `src/` for:
+
 - **Monorepo consistency** - Other packages use `src/`
 - **Tool compatibility** - Better IDE and tooling support
 - **Team familiarity** - Established convention
