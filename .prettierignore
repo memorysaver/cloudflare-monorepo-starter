@@ -16,3 +16,7 @@ vite.config.ts.timestamp*
 vitest.config.ts.timestamp*
 worker-configuration.d.ts
 .mise.toml
+**/.output/**
+**/.nitro/**
+**/.tanstack/**
+**/routeTree.gen.ts

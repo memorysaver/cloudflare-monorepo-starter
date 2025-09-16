@@ -15,18 +15,24 @@
 		"test": "run-vitest"
 	},
 	"dependencies": {
-		"@repo/hono-helpers": "workspace:*",
-		"hono": "4.9.7",
-		"workers-tagged-logger": "0.13.2"
+		"@tanstack/react-query": "5.89.0",
+		"@tanstack/react-router": "1.131.44",
+		"@tanstack/react-start": "1.131.44",
+		"react": "19.1.1",
+		"react-dom": "19.1.1"
 	},
 	"devDependencies": {
-		"@cloudflare/vite-plugin": "1.1.0",
 		"@cloudflare/vitest-pool-workers": "0.9.1",
 		"@repo/eslint-config": "workspace:*",
 		"@repo/tools": "workspace:*",
 		"@repo/typescript-config": "workspace:*",
+		"@tanstack/react-router-devtools": "1.131.44",
 		"@types/node": "24.5.0",
+		"@types/react": "19.1.13",
+		"@types/react-dom": "19.1.9",
+		"@vitejs/plugin-react": "5.0.2",
 		"vite": "6.3.4",
+		"vite-tsconfig-paths": "5.1.4",
 		"vitest": "3.2.4",
 		"wrangler": "4.37.0"
 	}

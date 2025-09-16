@@ -1,16 +1,13 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "web",
-	"main": "src/index.ts",
+	"name": "cloudflare-monorepo-starter-web",
+	"main": ".output/server/index.mjs",
 	"compatibility_date": "2025-04-28",
 	"compatibility_flags": ["nodejs_compat"],
-	"routes": [],
-	"logpush": true,
+	"assets": {
+		"directory": ".output/public"
+	},
 	"observability": {
 		"enabled": true
-	},
-	"vars": {
-		"ENVIRONMENT": "development", // overridden during deployment
-		"SENTRY_RELEASE": "unknown" // overridden during deployment
 	}
 }

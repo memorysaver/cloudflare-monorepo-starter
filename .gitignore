@@ -35,6 +35,9 @@ coverage
 .next/
 out/
 dist
+.output/
+.nitro/
+.tanstack/
 
 # Debug
 npm-debug.log*
