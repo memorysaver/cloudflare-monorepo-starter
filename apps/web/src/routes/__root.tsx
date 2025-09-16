@@ -1,25 +1,24 @@
-import type { ReactNode } from "react"
-import { createRootRoute, Outlet, HeadContent, Scripts } from "@tanstack/react-router"
+import { createRootRoute, HeadContent, Outlet, Scripts } from '@tanstack/react-router'
 
-import appCss from "@/styles/app.css?url"
+import appCss from '@/styles/app.css?url'
 
 export const Route = createRootRoute({
 	head: () => ({
 		meta: [
 			{
-				charSet: "utf-8",
+				charSet: 'utf-8',
 			},
 			{
-				name: "viewport",
-				content: "width=device-width, initial-scale=1",
+				name: 'viewport',
+				content: 'width=device-width, initial-scale=1',
 			},
 			{
-				title: "Cloudflare Monorepo Starter",
+				title: 'Cloudflare Monorepo Starter',
 			},
 		],
 		links: [
 			{
-				rel: "stylesheet",
+				rel: 'stylesheet',
 				href: appCss,
 			},
 		],
