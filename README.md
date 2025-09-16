@@ -1,6 +1,6 @@
-# Workers Monorepo Template
+# Cloudflare Monorepo Starter
 
-This template provides a fully featured monorepo for managing multiple Cloudflare Workers.
+This template offers a fully featured monorepo for managing multiple Cloudflare Workers, built on [workers-monorepo-template](https://github.com/jahands/workers-monorepo-template). In addition, it provides a sample web application with an opinionated technology stack, incorporating [TanStack Start](https://tanstack.com/start/latest), [Tailwind CSS](https://tailwindcss.com/), [Shadcn/UI](https://ui.shadcn.com/docs), [Better Auth](https://www.better-auth.com/docs/introduction), [Convex.Dev](https://www.convex.dev/).
 
 ## Why a Monorepo?
 
