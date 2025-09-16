@@ -11,15 +11,15 @@
 		"test": "run-vitest"
 	},
 	"dependencies": {
-		"@hono/standard-validator": "0.1.4",
-		"hono": "4.9.1",
+		"@hono/standard-validator": "0.1.5",
+		"hono": "4.9.7",
 		"http-codex": "0.6.1",
 		"workers-tagged-logger": "0.13.2",
-		"zod": "3.25.76"
+		"zod": "4.1.8"
 	},
 	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "0.8.63",
-		"@cloudflare/workers-types": "4.20250813.0",
+		"@cloudflare/vitest-pool-workers": "0.9.1",
+		"@cloudflare/workers-types": "4.20250913.0",
 		"@repo/eslint-config": "workspace:*",
 		"@repo/tools": "workspace:*",
 		"@repo/typescript-config": "workspace:*",

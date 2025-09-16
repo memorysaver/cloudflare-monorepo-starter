@@ -15,16 +15,16 @@
 	},
 	"dependencies": {
 		"@repo/hono-helpers": "workspace:*",
-		"hono": "4.9.1",
+		"hono": "4.9.7",
 		"workers-tagged-logger": "0.13.2"
 	},
 	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "0.8.63",
+		"@cloudflare/vitest-pool-workers": "0.9.1",
 		"@repo/eslint-config": "workspace:*",
 		"@repo/tools": "workspace:*",
 		"@repo/typescript-config": "workspace:*",
-		"@types/node": "22.15.27",
+		"@types/node": "24.5.0",
 		"vitest": "3.2.4",
-		"wrangler": "4.29.1"
+		"wrangler": "4.37.0"
 	}
 }
