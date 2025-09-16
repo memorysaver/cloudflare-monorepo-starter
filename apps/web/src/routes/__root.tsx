@@ -1,7 +1,29 @@
-import { createRootRoute, Outlet } from '@tanstack/react-router'
-import * as React from 'react'
+import type { ReactNode } from "react"
+import { createRootRoute, Outlet, HeadContent, Scripts } from "@tanstack/react-router"
+
+import appCss from "@/styles/app.css?url"
 
 export const Route = createRootRoute({
+	head: () => ({
+		meta: [
+			{
+				charSet: "utf-8",
+			},
+			{
+				name: "viewport",
+				content: "width=device-width, initial-scale=1",
+			},
+			{
+				title: "Cloudflare Monorepo Starter",
+			},
+		],
+		links: [
+			{
+				rel: "stylesheet",
+				href: appCss,
+			},
+		],
+	}),
 	component: RootComponent,
 })
 
@@ -9,14 +31,13 @@ function RootComponent() {
 	return (
 		<html lang="en">
 			<head>
-				<meta charSet="UTF-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<title>Cloudflare Monorepo Starter</title>
+				<HeadContent />
 			</head>
 			<body>
 				<div id="root">
 					<Outlet />
 				</div>
+				<Scripts />
 			</body>
 		</html>
 	)
