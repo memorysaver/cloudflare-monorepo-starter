@@ -12,7 +12,8 @@
 		"dev": "run-vite-dev",
 		"fix:workers-types": "run-wrangler-types",
 		"preview": "run-vite-preview",
-		"test": "run-vitest"
+		"test": "run-vitest",
+		"test:ci": "run-vitest"
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "1.2.3",

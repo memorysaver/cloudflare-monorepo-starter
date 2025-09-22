@@ -61,6 +61,10 @@
 			"dependsOn": ["build", "topo"],
 			"outputLogs": "new-only"
 		},
+		"web#test:ci": {
+			"dependsOn": ["web#build", "topo"],
+			"outputLogs": "new-only"
+		},
 		"check:ci": {
 			"dependsOn": [
 				"//#check:format",
