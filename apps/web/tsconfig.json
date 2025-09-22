@@ -1,0 +1,9 @@
+{
+	"extends": "@repo/typescript-config/workers.json",
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	}
+}

@@ -50,7 +50,8 @@
 		},
 		"//#test:ci": {
 			"dependsOn": [
-				"build"
+				"build",
+				"web#build"
 				// Packages that need to be built before running tests can be added here.
 				// Example:
 				// "@repo/test-helpers#build"
@@ -59,6 +60,10 @@
 		},
 		"test:ci": {
 			"dependsOn": ["build", "topo"],
+			"outputLogs": "new-only"
+		},
+		"web#test:ci": {
+			"dependsOn": ["web#build", "topo"],
 			"outputLogs": "new-only"
 		},
 		"check:ci": {
