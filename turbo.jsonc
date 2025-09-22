@@ -50,7 +50,8 @@
 		},
 		"//#test:ci": {
 			"dependsOn": [
-				"build"
+				"build",
+				"web#build"
 				// Packages that need to be built before running tests can be added here.
 				// Example:
 				// "@repo/test-helpers#build"
